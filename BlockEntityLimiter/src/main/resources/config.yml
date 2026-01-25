@@ -1,0 +1,62 @@
+# BlockEntityLimiter Configuration File
+# This plugin limits the amount of block entities that can be placed in a single chunk
+
+# Master limit controls the total number of ALL tracked block entities in a chunk
+# If enabled, the sum of all block entities cannot exceed this amount
+# Individual limits still apply - whichever is reached first prevents placement
+master-limit:
+  enabled: true
+  amount: 1000
+
+# Individual block entity limits
+# enabled: true/false - Whether to limit this block entity type
+# limit: Maximum number of this specific block entity type per chunk
+block-entities:
+  decorated-pot:
+    enabled: true
+    limit: 100
+  
+  ender-chest:
+    enabled: true
+    limit: 100
+  
+  blast-furnace:
+    enabled: true
+    limit: 100
+  
+  smoker:
+    enabled: true
+    limit: 100
+  
+  furnace:
+    enabled: true
+    limit: 100
+  
+  barrel:
+    enabled: true
+    limit: 100
+  
+  dropper:
+    enabled: true
+    limit: 100
+  
+  dispenser:
+    enabled: true
+    limit: 100
+  
+  chest:
+    enabled: true
+    limit: 100
+  
+  trapped-chest:
+    enabled: true
+    limit: 100
+  
+  hopper:
+    enabled: true
+    limit: 100
+  
+  # This applies to all shulker box colors
+  shulker-box:
+    enabled: true
+    limit: 100
